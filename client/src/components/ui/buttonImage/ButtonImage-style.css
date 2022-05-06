@@ -1,0 +1,9 @@
+.container_button {
+    text-align: center;
+}
+
+.container_button > svg {
+    width: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}

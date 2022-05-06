@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+    overflow: hidden;
+}
+
+.container_images {
+    position: relative;
+    white-space: normal;
+    width: 100%;
+}
+
+.container_images > img {
+    width: 100%;
+    overflow: hidden;
+}

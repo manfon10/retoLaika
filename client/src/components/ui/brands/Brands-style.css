@@ -1,0 +1,36 @@
+.container_brands > h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 800;
+    color: #5a3681;
+}
+
+.container_brands > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container_brands > div > div {
+    margin-right: 20px;
+}
+
+.container_brands > div > div > img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+@media only screen and ( min-width: 200px ) and (max-width: 767px) {
+
+    .container_brands {
+        text-align: center;
+    }
+
+    .container_brands > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

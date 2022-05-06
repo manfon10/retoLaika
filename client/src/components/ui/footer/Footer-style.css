@@ -1,0 +1,102 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background: #f0f1f3;
+    margin-top: 30px;
+}
+
+footer > div {
+    margin: 20px;
+}
+
+.footer_link {
+    display: none;
+}
+
+footer > div > h3 {
+    color: #3b1663;
+}
+
+footer > div > p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #5a3681;
+    cursor: pointer;
+}
+
+.info_laika {
+    text-align: center;
+    font-weight: 900;
+}
+
+.subscribe_laika > input.emailInput {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.subscribe_laika > button {
+    border: none;
+    background-color: #3b1663;
+    color: white;
+    padding: 0 8px;
+    position: relative;
+    right: 30px;
+    border-radius: 5px;
+}
+
+.subscribe_laika > input.checkInput {
+    position: relative;
+    right: 15px;
+}
+
+.footer_icons {
+    text-align: center;
+    color: #3b1663;
+}
+
+.images_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f0f1f3;
+}
+
+.images_footer > div {
+    text-align: center;
+    width: 50%;
+}
+
+.images_footer > div > img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+@media only screen and ( min-width: 200px ) and (max-width: 767px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer > div {
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer_link {
+        display: block;
+        margin-left: 20px;
+        color: #5a3681;
+    }
+
+    footer > div > p, footer > div > input, footer > div > button, footer > div > img, span, .info_laika {
+        display: none;
+    }
+}
