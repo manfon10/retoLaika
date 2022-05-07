@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const process = require('dotenv').config();
 
 const app = express();
 
@@ -17,10 +16,8 @@ app.use('/api/v1', productRoutes);
 
 // App Running
 
-const { SERVER_PORT } = process.parsed;
+const PORT = process.env.PORT || 3000;
 
-const PORT = SERVER_PORT || 5000;
-
-app.listen( PORT);
+app.listen( PORT );
 
 module.exports = { app };
