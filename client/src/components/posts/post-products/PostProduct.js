@@ -7,7 +7,7 @@ const PostProduct = () => {
     const [ products, setProducts ] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/v1/products')
+        axios.get('https://laikaapi.herokuapp.com/api/v1/products')
             .then( res => setProducts(res.data.products));
     }, []);
 
